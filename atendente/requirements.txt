@@ -1,0 +1,7 @@
+Django==4.2.10
+djangorestframework==3.16.1
+djangorestframework-simplejwt==5.2.2    # opcional: JWT
+# djangorestframework-authtoken==1.0.0    # para token simples do DRF
+pytz
+sqlparse
+drf-spectacular==0.27.2

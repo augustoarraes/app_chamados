@@ -1,0 +1,585 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2025-09-11T15:00:55.787Z",
+            "user": 1,
+            "content_type": 3,
+            "object_id": "1",
+            "object_repr": "Atendente",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2025-09-11T15:02:06.245Z",
+            "user": 1,
+            "content_type": 3,
+            "object_id": "2",
+            "object_repr": "Tecnico",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2025-09-11T15:03:37.878Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "2",
+            "object_repr": "arraes.malu@gmail.com ()",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2025-09-11T15:04:18.331Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "2",
+            "object_repr": "arraes.malu@gmail.com (arraes.malu@gmail.com)",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Email address\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2025-09-11T15:04:47.646Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "3",
+            "object_repr": "arraes.davi@gmail.com ()",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2025-09-11T15:05:01.807Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "3",
+            "object_repr": "arraes.davi@gmail.com (arraes.davi@gmail.com)",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Email address\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2025-09-11T15:24:58.079Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "2",
+            "object_repr": "arraes.malu@gmail.com (arraes.malu@gmail.com)",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2025-09-11T15:25:22.574Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "3",
+            "object_repr": "arraes.davi@gmail.com (arraes.davi@gmail.com)",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2025-09-11T15:36:17.279Z",
+            "user": 2,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "primeiro chamado",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2025-09-11T15:38:54.337Z",
+            "user": 1,
+            "content_type": 3,
+            "object_id": "1",
+            "object_repr": "Atendente",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2025-09-11T15:39:41.220Z",
+            "user": 2,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "primeiro chamado",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Aberto por\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2025-09-11T15:40:34.913Z",
+            "user": 2,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "primeiro chamado",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Prioridade\"]}}]"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 4,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 4,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 4,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 4,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 5,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 5,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 5,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 5,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 6,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 6,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 6,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 6,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add chamado",
+            "content_type": 7,
+            "codename": "add_chamado"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change chamado",
+            "content_type": 7,
+            "codename": "change_chamado"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete chamado",
+            "content_type": 7,
+            "codename": "delete_chamado"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view chamado",
+            "content_type": 7,
+            "codename": "view_chamado"
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 1,
+        "fields": {
+            "name": "Atendente",
+            "permissions": [
+                25,
+                26,
+                28,
+                24
+            ]
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 2,
+        "fields": {
+            "name": "Tecnico",
+            "permissions": [
+                5,
+                6,
+                8,
+                26,
+                28
+            ]
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "chamados",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "chamados",
+            "model": "chamado"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "ccbqab35xpbb6b0sllsvqtg1jyx6dmfj",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGllZ_xJT0nMGa-1d4wCypTipEHeHSCmgfTPzXiLgtpawdV7CTOIslDj9bhHTg-sO6I711mRqdV3mKHdFHrTLayN-Xg7376BgL9_aemNcRkrGOlB5QDPZCaIzSnsEnYBhyOTMCBiJSbFn1iOCB0SbIor3B9GQOB0:1uwjOK:3BpcHIQNH-fVmhCau84NkDoTFtsmH6BEg-PhopGVUHk",
+            "expire_date": "2025-09-25T15:39:20.171Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "gcrr5xxyq93xoex1d25gzgdhsqtpllot",
+        "fields": {
+            "session_data": ".eJxVjMEOwiAQRP-FsyF0oQIevfsNZJcFqRpISnsy_rtt0oNe5jDvzbxFwHUpYe1pDhOLixjE6bcjjM9Ud8APrPcmY6vLPJHcFXnQLm-N0-t6uH8HBXvZ1qDRkEGXx5TPJlE0WTuMCFGZbK1nVtkhUwSHhHm0ysPgASxopi3F5wsOLjiG:1uwj7a:sWePp288wBuI0GZ9e6to-NBrxsdGJSRtEnOWLVYkBzs",
+            "expire_date": "2025-09-25T15:22:02.287Z"
+        }
+    },
+    {
+        "model": "chamados.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$k2pazyKKpVfMamMJT5xBig$+L2780fBNOsQj0nh/jeYatTEFF3IO/H/crnPL79yREo=",
+            "last_login": "2025-09-11T15:22:02.273Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "arraes.augusto@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2025-09-11T13:00:30.138Z",
+            "celular": null,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "chamados.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$9XiaPvLByuwdKll2lZSwJP$WxXowkWlyUtTHqb4NVxYfkxEaNrrxUnt0oMEj7y8a1Y=",
+            "last_login": "2025-09-11T15:39:20.157Z",
+            "is_superuser": false,
+            "username": "arraes.malu@gmail.com",
+            "first_name": "",
+            "last_name": "",
+            "email": "arraes.malu@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2025-09-11T15:03:37Z",
+            "celular": null,
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "chamados.user",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$eJNtBtXrPFUa3uzIR5LNV1$YZcxDvfQhHIQd6jCsNWO1dJVHQ2JCZ26D0qQDLjdogM=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "arraes.davi@gmail.com",
+            "first_name": "",
+            "last_name": "",
+            "email": "arraes.davi@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2025-09-11T15:04:47Z",
+            "celular": null,
+            "groups": [
+                2
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "chamados.chamado",
+        "pk": 1,
+        "fields": {
+            "titulo": "primeiro chamado",
+            "descricao": "primeiro chamado",
+            "prioridade": "high",
+            "setor": "cliente",
+            "status": "open",
+            "aberto_por": 2,
+            "tecnico": null,
+            "data_criacao": "2025-09-11T15:36:17.272Z",
+            "data_atualizacao": "2025-09-11T15:40:34.912Z"
+        }
+    }
+]
