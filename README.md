@@ -12,8 +12,8 @@ O Sistema está distribuído da seguinte forma:
 docker compose up -d
 ```
 Acessando a Aplicação da Atendente [http://localhost:3000](http://localhost:3000)
+Acessado o Swagger da API no backend [http://127.0.0.1:8000/api/docs](http://127.0.0.1:8000/api/docs)
 Acessando a Aplicação do Técnico 
-Acessado o Swagger da API no backend 
 
 ## Contato
 

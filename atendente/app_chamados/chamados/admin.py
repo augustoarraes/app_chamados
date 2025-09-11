@@ -20,7 +20,7 @@ class UserAdmin(BaseUserAdmin):
 @admin.register(Chamado)
 class ChamadoAdmin(admin.ModelAdmin):
     list_display = ('titulo', 'status', 'prioridade', 'aberto_por', 'tecnico', 'data_criacao', 'data_atualizacao')
-    list_filter = ('status', 'prioridade', 'data_criacao', 'tecnico')
+    list_filter = ('status', ) # 'prioridade', 'data_criacao', 'tecnico'
     search_fields = ('titulo', 'descricao', 'aberto_por__username', 'tecnico__username')
     readonly_fields = ('data_criacao', 'data_atualizacao',)
     autocomplete_fields = ('aberto_por', 'tecnico')
