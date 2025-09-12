@@ -205,3 +205,61 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+#
+# Vue js
+#
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependências
+/node_modules
+
+# Build output
+/dist
+/dist-ssr
+/build
+
+# Produção
+*.local
+
+# Editor de código
+.vscode/*
+!.vscode/extensions.json
+.vscode
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Cache
+/.cache
+/.vite
+/.nuxt
+/.output
+
+# Ambiente
+.env.local
+.env.*.local
+
+# Testes
+/coverage
+/jest-*
+
+# Docker
+docker-compose.override.yml
+
+# Outros
+Thumbs.db
+*.zip
+
