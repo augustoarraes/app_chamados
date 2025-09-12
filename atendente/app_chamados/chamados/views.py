@@ -17,7 +17,7 @@ class IsStaffOrReadOnly(permissions.BasePermission):
 class UserViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    permission_classes = [permissions.IsAuthenticated, permissions.IsAdminUser]  # somente admin pode ver lista/alterar via API
+    permission_classes = [permissions.IsAuthenticated, permissions.IsAdminUser]
 
 
 class ChamadoViewSet(viewsets.ModelViewSet):
