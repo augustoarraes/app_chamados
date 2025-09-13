@@ -67,8 +67,8 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),   # token válido por 1 hora
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=7),      # refresh válido por 7 dias
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),   # token 1 hora
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=7),      # refresh 7 dias
     "ROTATE_REFRESH_TOKENS": False,
     "BLACKLIST_AFTER_ROTATION": True,
     "AUTH_HEADER_TYPES": ("Bearer",),
@@ -139,9 +139,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
