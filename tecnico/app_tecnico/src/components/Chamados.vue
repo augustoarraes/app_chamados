@@ -40,20 +40,15 @@
 import { ref, onMounted } from "vue";
 import axios from "axios";
 import { useRouter } from "vue-router";
+import api from "../services/api.js";
 
 const chamados = ref([]);
 
 const router = useRouter();
 
-const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU3NzIyMTkyLCJpYXQiOjE3NTc3MDA1OTIsImp0aSI6IjU5ZjM5OTAyMzdkMTRiM2NiNzUzZDJmMTYxYzk5MzljIiwidXNlcl9pZCI6MX0.8ngZ84OEw0myQmV0-uA-dn70B9Pb6yMvbOdi1bL95n4";
-
 onMounted(async () => {
   try {
-    const response = await axios.get("http://localhost:8000/api/chamados/", {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
+    const response = await api.get("http://localhost:8000/api/chamados/");
     chamados.value = response.data;
   } catch (error) {
     console.error("Erro ao buscar chamados:", error);

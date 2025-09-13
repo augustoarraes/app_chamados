@@ -14,16 +14,11 @@ const chamado = ref({
   prioridade: ''
 });
 
-const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU3NzM3OTYxLCJpYXQiOjE3NTc3MTYzNjEsImp0aSI6ImQwNDBiYWU5Y2ZmZDQ0NmY5NDM3YWY3OTUyODgxZGE0IiwidXNlcl9pZCI6MX0.jnk_tHaisfKCiihGa93KgbPZIevRYDx2ZSIr0bbdmcs";
 
 onMounted(async () => {
   try {
-    const response = await fetch(`http://localhost:8000/api/chamados/${route.params.id}/`, {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
-    chamado.value = await response.json();
+    const response = await api.get(`http://localhost:8000/api/chamados/${route.params.id}/`);
+    chamado.value = response.data;
   } catch (error) {
     console.error("Erro ao carregar chamado:", error);
   }
@@ -36,12 +31,7 @@ async function atualizarChamado() {
       descricao: chamado.value.descricao,
       status: chamado.value.status,
       prioridade: chamado.value.prioridade
-    },
-      {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      }
+    }
     );
     router.push("/"); // redireciona para Home
   } catch (error) {
