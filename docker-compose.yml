@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+
+  web-atendente:
+    build: 
+      context: ./atendente
+    container_name: web-atendente
+    command: python manage.py runserver 0.0.0.0:8000
+    working_dir: /app
+    volumes:
+      - ./atendente:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1
+      - DJANGO_ALLOWED_HOSTS=*
+      - PYTHONUNBUFFERED=1
+    networks:
+      - cloudpark-network
+
+  frontend-tecnico:
+    build:
+      context: ./tecnico
+    container_name: frontend-tecnico
+    command: npm run dev -- --host
+    volumes:
+      - ./tecnico:/app
+      - /app/node_modules
+    ports:
+      - "5173:5173"
+    depends_on:
+      - web-atendente # backend
+    networks:
+      - cloudpark-network
+
+networks: 
+  cloudpark-network:
+    driver: bridge
