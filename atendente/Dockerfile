@@ -19,15 +19,11 @@ COPY requirements.txt .
 
 #COPY . .
 
-# Instala dependências Python
 RUN pip install --upgrade pip \
     && pip install -r requirements.txt
 
-# Copia o código do projeto
 COPY . .
 
-# Expor a porta do Django
 EXPOSE 8000
 
-# Comando para rodar o servidor de desenvolvimento
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
