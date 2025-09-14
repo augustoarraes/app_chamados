@@ -33,6 +33,11 @@
         </tr>
       </tbody>
     </table>
+
+    <div style="margin-top: 20px;">
+      <button @click="logout">Logout</button>
+    </div>
+
   </div>
 </template>
 
@@ -63,6 +68,11 @@ function formatarData(data) {
 const detalharChamado = (sub) => {
   router.push(`/chamados/${sub.id}`)
 }
+
+const logout = () => {
+  localStorage.removeItem("jwt_access_token"); // limpa token
+  router.push("/login"); // redireciona para login
+};
 
 </script>
 

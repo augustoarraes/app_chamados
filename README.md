@@ -21,12 +21,12 @@ Ambiente Django:
 - Acessado o Swagger da API do backend [http://127.0.0.1:8000/api/docs](http://127.0.0.1:8000/api/docs)
 
 Ambiente FrontEnd do Técnico:
-- Acessando a Aplicação do Técnico [http://localhost:5173](http://localhost:5173)
+- Acessando a Aplicação do Técnico [http://localhost:5173/login](http://localhost:5173/login)
 
 Usuários para teste:
 - Django: admin + admin
-- Atendente: arraes.malu@gmail.com + malu
-- Tecnico: arraes.davi@gmail.com + davi
+- Atendente: malu@algumemail.com + malu
+- Tecnico: davi@algumemail.com + davi
 
 
 ## Contato
